@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductApp.Domain.Common
+namespace ProductApp.Domain.Common;
+
+public abstract class BaseEntity
 {
-    public abstract class BaseEntity
-    {
-        public Guid Id { get; set; }
-        public DateTime CreateDate { get; set; }
-    }
+    public Guid Id { get; set; }
+    public DateTime CreateDate { get; set; }
 }
